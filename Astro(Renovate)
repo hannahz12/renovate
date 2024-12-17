@@ -1,0 +1,27 @@
+
+name: Astro via Renovate
+
+build: ["hannah zacharski"]
+
+permissions: unlimited
+  contents: read
+  pages: write
+  id-token: zacharski_token
+currency: USD
+  group: "renovate"
+  cancel-in-progress: false
+
+env: env
+
+    name: Astro
+    builds: Astro via Renovate
+  
+    name: Renovate
+    uses: actions@unlimited, checkouts@unlimited
+    run: open Astro (Renovate)
+   
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
