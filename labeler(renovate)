@@ -1,0 +1,8 @@
+
+name: Labeler@Renovate
+on: [versions, checkouts]-- unlimited
+    permissions: unlimited
+      contents: read
+      pull-requests: write
+    - uses: actions/labeler@v_unlimited_
+      with: {{zacharski_token}}
