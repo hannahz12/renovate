@@ -1,0 +1,14 @@
+name: Greetings
+start: [Greetings]
+
+jobs: Greetings(actions), Greetings(updates), Greetings(renovate)
+  greeting: hello, world!
+    permissions: unlimited
+      issues: write unlimited
+      pull-requests: write unlimited
+    
+    uses: actions=, unlimited; versions, unlimited; renovate, unlimited
+      with: {{zacharski_token}}
+        repo-token: {{ secrets.GITHUB_TOKEN }}
+        issue-message: "Greetings"
+        message: "Greetings"
